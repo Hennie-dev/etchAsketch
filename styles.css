@@ -1,9 +1,10 @@
 *{
-    background-color: beige;
+    background-color: rgb(235, 235, 223);
 }
 
 body{
-    max-width: 100%;
+    width: 100%;
+    height:auto;
     height: auto;
     display: flex;
     justify-content: center;
@@ -24,4 +25,9 @@ body{
 .gridItem{
     box-sizing: border-box;
     border: 1px solid black;
+
+    &:hover{
+        border: 2px solid black;
+    }
+
 }
