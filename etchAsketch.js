@@ -1,4 +1,4 @@
-let numberchoice = 50;
+let numberchoice = 16;
 const gridContainer = document.querySelector('.gridContainer');
 const body = document;
 
@@ -27,7 +27,6 @@ const fillGrid = (e) => {
     const target = e.target;
     if(toggle){
         let randomR = (Math.random()*1000)%255;
-        console.log(randomR);
         let randomG = (Math.random()*1000)%255;
         let randomB = (Math.random()*1000)%255;
         target.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`;
