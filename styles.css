@@ -1,0 +1,27 @@
+*{
+    background-color: beige;
+}
+
+body{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.gridContainer{
+    display: flex;
+    overflow: auto;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    border: 2px solid #615a56;
+}
+
+.gridItem{
+    box-sizing: border-box;
+    border: 1px solid black;
+}
