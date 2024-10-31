@@ -9,9 +9,10 @@ body.addEventListener('mouseup', function(){toggle = false;});
 
 //mousedown on element
 const fillCurrent = (e) => {
-
+    e.preventDefault();
     toggle = true;
     const target = e.target;
+    target.draggable = false;
     console.log(target.classList[0]);
     if(target.classList[0]=="gridItem"){
         let randomR = (Math.random()*1000)%255;
@@ -24,7 +25,9 @@ const fillCurrent = (e) => {
 
 //Coloring in grid
 const fillGrid = (e) => {
+    e.preventDefault();
     const target = e.target;
+    target.draggable = false;
     if(toggle){
         let randomR = (Math.random()*1000)%255;
         let randomG = (Math.random()*1000)%255;
