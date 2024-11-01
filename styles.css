@@ -1,5 +1,7 @@
 *{
-    background-color: rgb(235, 235, 223);
+    margin: 0px;
+    background-color: rgb(241, 241, 234);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body{
@@ -30,4 +32,51 @@ body{
         border: 2px solid black;
     }
 
+}
+
+.rangeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(73, 37, 10);
+    background-color: rgb(221, 209, 193);
+    border-radius: 4px;
+    margin-bottom: 4px;
+    padding: 3px;
+}
+
+#rangeInput{
+    margin-bottom: 10px;
+    background-color: white;
+    width: 50px;
+    text-align: center;
+}
+
+#inputLabel{
+
+    background-color: rgb(221, 209, 193);
+
+}
+
+#reset{
+    
+    border-radius: 4px;
+    background-color: blanchedalmond;
+    color:black;
+    font-weight: 500;
+    box-shadow: 1px 0px 2px rgb(134, 111, 81), 0px 2px 3px rgb(134, 111, 81);
+    &:active{
+        background-color: rgb(212, 193, 166);
+        box-shadow: none;
+
+    }
+
+}
+
+h1{ 
+    text-align: center;
+    width: 100%;
+    background-color: rgb(243, 212, 194);
+    margin-bottom: 5px;
 }

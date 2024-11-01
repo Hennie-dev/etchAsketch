@@ -9,7 +9,11 @@
     </head>
     <body>
         <h1>Etch-A-Sketch</h1>
-        <input type="range" min="1" max="100" step="1" id="slider">
+        <div class="rangeContainer">
+            <p id="inputLabel">How many squares would you like? (Max 100)</p>
+            <input type="text" id="rangeInput">
+            <button id="reset">RESET</button>
+        </div>
         <div class="gridContainer">
         </div>
     </body>
